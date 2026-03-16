@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Le Store Furry - Zone d'Art</title>
+    <link rel="stylesheet" href="art.css">
+</head>
+
+<body>
+
+<header>
+    <ul class="nav-links">
+    <li><a href="index.html">Accueil</a></li>
+    
+</ul>
+</header>
+
+<main>
+    <h1>🎨 Zone d'Art</h1>
+
+    <section class="gallery">
+        <img src="img/1.jpeg" alt="Artwork 1" onclick="openArt(this)">
+        <img src="img/2.jpg" alt="Artwork 2" onclick="openArt(this)">
+        <img src="img/3.jpeg" alt="Artwork 3" onclick="openArt(this)">
+        <img src="img/4.png" alt="Artwork" onclick="openArt(this)">
+        <img src="img/5.png" alt="Artwork" onclick="openArt(this)">
+        <img src="img/6.png" alt="Artwork" onclick="openArt(this)">
+        <img src="img/7.jpg" alt="Artwork" onclick="openArt(this)">
+        <img src="img/8.jpg" alt="Artwork" onclick="openArt(this)">
+        <img src="img/9.jpg" alt="Artwork" onclick="openArt(this)">
+    </section>
+</main>
+
+<!-- Viewer pour agrandir les images -->
+<div id="viewer" onclick="closeArt()">
+    <img id="bigArt" alt="Agrandissement de l'image">
+</div>
+
+<script src="art.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Le Store Furry - Boutique</title>
+    <link rel="stylesheet" href="store.css">
+</head>
+<body>
+
+<header>
+    <nav>
+        <ul class="nav-links">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="art.html">Zone d'Art</a></li>
+            <li><a href="store.html">Boutique</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <h1>🛒 Boutique Furry</h1>
+
+    <section class="products">
+        <div class="product">
+            <img src="img/item1.jpg" alt="Produit 1">
+            <h2>Peluches Furry</h2>
+            <p>€25</p>
+            <button onclick="addToCart('Peluches Furry', 25)">Ajouter au panier</button>
+        </div>
+
+        <div class="product">
+            <img src="img/item2.jpg" alt="Produit 2">
+            <h2>T-shirts Furry</h2>
+            <p>€20</p>
+            <button onclick="addToCart('T-shirts Furry', 20)">Ajouter au panier</button>
+        </div>
+
+        <div class="product">
+            <img src="img/item3.jpg" alt="Produit 3">
+            <h2>Badges Furry</h2>
+            <p>€5</p>
+            <button onclick="addToCart('Badges Furry', 5)">Ajouter au panier</button>
+        </div>
+    </section>
+
+    <aside class="cart">
+        <h2>Panier 🛒</h2>
+        <ul id="cart-items"></ul>
+        <p>Total : €<span id="total">0</span></p>
+        <button onclick="checkout()">Passer à la caisse</button>
+    </aside>
+</main>
+
+<script src="store.js"></script>
+</body>
+</html>
